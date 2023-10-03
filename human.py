@@ -19,8 +19,16 @@ class Human:
         self.number_of_ears = number_of_ears
         self.mouth = mouth
 
+    def clap(self):
+        available_hands = self.number_of_hands
+        return f"clapping with {available_hands} hands"
 
-human1 = Human("stan", 2, 2, 2, 2, 1)
-print(human1.name)
-print(human1.eyes)
-print(type(human1))
+    
+
+stan = Human("stan", 2, 2, 2, 2, 1)
+dice = Human("dice", 2, 2, 2, 2, 1)
+print(stan.name)
+print(f"{stan.name} is {stan.clap()}")
+print(f"{dice.name} is {dice.clap()}")
+print(type(stan))
+print(stan.clap())
