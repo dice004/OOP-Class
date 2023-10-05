@@ -33,7 +33,7 @@ class Human:
 
 
 
-class Chelsea(Human):
+class Chelsea_Player(Human):
 
     # Constructor
     def __init__(self, name, age, face, height, boots, jersey_number, mood, celebration, physique, hairstyle):
@@ -47,7 +47,7 @@ class Chelsea(Human):
         self.hairstyle = hairstyle
         self.logo = "Lion"
 
-class Barca(Human):
+class Barca_Player(Human):
 
     def __init__(self, name, age, face, height, boots, jersey_number, mood, celebration,  physique, hairstyle):
         super().__init__(name, age, face, height)
@@ -63,8 +63,8 @@ class Barca(Human):
 
 
 
-player2 = Barca("Pique", 35, "round", 195, 2, 5, "happy", "Sream", "Tall","wavy")
+player2 = Barca_Player("Pique", 35, "round", 195, 2, 5, "happy", "Sream", "Tall","wavy")
 print(player2.jersey_colour)
 print(player2.name)
-caicedo = Chelsea("Caicedo",20,"black", 185, "nike",23,"happy","hug","fit","low cut")
+caicedo = Chelsea_Player("Caicedo",20,"black", 185, "nike",23,"happy","hug","fit","low cut")
 print(caicedo.name)
