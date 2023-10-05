@@ -1,21 +1,33 @@
+import random
+
+
 class Dice:
     # Attributes
     number_of_faces = 0
+    pips = 0
+
+
 
 
     # Constructor
-    def __init__(self,number_of_faces):
+    def __init__(self,number_of_faces, pips):
         self.number_of_faces = number_of_faces
+        self.pip = pips
 
 
     # Methods
     def roll():
-        return
+        dice = random.randint(1,6)
+        return dice
 
+    def display_num():
+        return
 
 class Player:
     # Attributes
     name = ""
+    turn = 0
+
 
     # Constructor
     def __init__(self, name):
@@ -37,4 +49,4 @@ class Board:
 
     # Methods 
     def switch():
-        return  
+        return   
