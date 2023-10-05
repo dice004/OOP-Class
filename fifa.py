@@ -35,7 +35,7 @@ class Human:
 
 
 
-class Player(Human):
+class Chelsea(Human):
 
     # Constructor
     def __init__(self, name, age, face, height, boots, jersey_number, mood, celebration, jersey_colour, physique, hairstyle):
@@ -44,21 +44,27 @@ class Player(Human):
         self.jersey_number = jersey_number
         self.mood = mood
         self.celebration = celebration
-        self.jersey_colour = jersey_colour
+        self.jersey_colour = "Blue"
         self.physique = physique
         self.hairstyle = hairstyle
 
-class Chelsea(Player):
-    def __init__(self, name, age, face, height, boots, jersey_number, mood, celebration,  physique, hairstyle):
-        super().__init__(self, name, age, face, height, boots, jersey_number, mood, celebration,  physique, hairstyle)
-        self.jersey_colour = "blue"
-        self.logo = "lion"
+class Barca(Human):
+
+    def __init__(self, name, age, face, height, boots, jersey_number, mood, celebration,  physique, hairstyle, logo):
+        super().__init__(name, age, face, height)
+        self.boots = boots
+        self.jersey_number = jersey_number
+        self.mood = mood
+        self.celebration = celebration
+        self.jersey_colour = "Red & Blue"
+        self.physique = physique
+        self.hairstyle = hairstyle
 
 
 
 
-player2 = Player("Fred", 22,"round", 185, 2, 23, "Happy", "Scream", "pink", "Slim", "waves")
+player2 = Barca("Pique", 35, "round", 195, 2, 5, "happy", "Sream", "Tall","wavy","Catalonia")
 print(player2.jersey_colour)
 print(player2.name)
-# caicedo = Chelsea("Caicedo",20,"black", 185, "nike",23,"happy","hug","fit","low cut")
-# print(caicedo.name)
+caicedo = Chelsea("Caicedo",20,"black", 185, "nike",23,"happy","hug","fit","low cut","lion")
+print(caicedo.name)
